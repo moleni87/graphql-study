@@ -2,12 +2,12 @@ create table post (
     id bigint(20),
     title varchar(20),
     category varchar(20),
-    author_id varchar(20),
+    author_id char(36),
     primary key (id)
 );
 
 create table author (
-    id varchar(20),
+    id char(36),
     name varchar(20),
     thumbnail varchar(20),
     primary key (id)
@@ -21,3 +21,25 @@ insert into post values
 insert into author values
 ('1', 'Author1', '1'),
 ('2', 'Author2', '1');
+
+
+/*
+mutation createAuthor{
+  createAuthor(input:{
+    name : "바보야"
+    thumbnail:"다혜띠"
+  }){
+    id
+  }
+}
+
+query getAuthors{
+  authors{
+    id
+  }
+}
+
+https://bezkoder.com/spring-boot-graphql-mysql-jpa/
+
+https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/#schema
+*/
