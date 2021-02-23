@@ -40,6 +40,8 @@ dependencies {
     implementation("com.graphql-java:graphql-spring-boot-starter:5.0.2")
     implementation("com.graphql-java:graphiql-spring-boot-starter:5.0.2")
     implementation("com.graphql-java:graphql-java-tools:5.2.4")
+    implementation("com.graphql-java:java-dataloader:2.2.3")
+    implementation("com.graphql-java:graphql-java:14.1")
 
     implementation("org.flywaydb:flyway-core")
 

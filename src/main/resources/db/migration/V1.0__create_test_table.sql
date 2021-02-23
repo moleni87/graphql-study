@@ -24,21 +24,6 @@ insert into author values
 
 
 /*
-mutation createAuthor{
-  createAuthor(input:{
-    name : "바보야"
-    thumbnail:"다혜띠"
-  }){
-    id
-  }
-}
-
-query getAuthors{
-  authors{
-    id
-  }
-}
-
 https://bezkoder.com/spring-boot-graphql-mysql-jpa/
 
 https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/#schema
